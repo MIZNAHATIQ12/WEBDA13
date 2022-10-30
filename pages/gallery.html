@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="../css/gallery.css">
+    
+</head>
+
+<body>
+
+  <header>
+    <h1>GALLERY</h1>
+  </header>
+       
+       
+          <div class="audiofile">
+            <audio controls autoplay>
+                <source src="../av/audio12.mp3" type="audio/mp3">
+                </audio>
+              <h1>CLICK TO PLAY / PAUSE</h1>
+          </div>
+
+  <div class="gallery_container">
+        <div class="gallery">
+          <a href="https://iul.ac.in/Album/FIESTA-2018_Album.aspx" target="_blank">
+            <img src="https://iul.ac.in/img/fiesta2018CoverImage.jpg" alt="FIESTA2018" width="600" height="400">
+          </a>
+          </a>
+          <div class="desc">FIESTA-2018</div>
+        </div>
+        
+        <div class="gallery">
+         
+            <a href="https://iul.ac.in/Album/Library.aspx" target="_blank">
+            <img src="https://iul.ac.in/img/CentralLibraryCoverImage.jpg" alt="CentralLibraryCoverImage" width="600" height="400">
+          </a>
+          </a>
+          <div class="desc">CENTRAL LIBRARY</div>
+        </div>
+        
+        <div class="gallery">
+          <a href="https://iul.ac.in/Album/Sports.aspx" target="_blank">
+            <img src="https://iul.ac.in/img/SportCoverImage.jpg" alt="INTEGRALSPORTS" width="600" height="400">
+          </a>
+          </a>
+          <div class="desc">INTEGRAL SPORTS</div>
+        </div>
+        
+        <div class="gallery" id="center">
+         <a href="https://iul.ac.in/Album/RepublicDay.aspx" target="_blank">
+            <img src="https://iul.ac.in/img/RepublicDayCoverImage.jpg" alt="RepublicDayCoverImage" width="600" height="400">
+          </a>
+          </a>
+          <div class="desc">REPUBLIC DAY</div>
+        </div>
+        
+
+      </div>
+
+        <div class="top_button">
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+          </div>
+          <script>
+          
+              let mybutton = document.getElementById("myBtn");
+              
+              
+              window.onscroll = function() {scrollFunction()};
+              
+              function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+                } else {
+                  mybutton.style.display = "none";
+                }
+              }
+              
+              
+              function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+              }
+              </script>
+          
+        
+</body>
+</html>

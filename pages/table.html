@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMETABLE</title>
+    <link rel="stylesheet" href="../css/table.css">
+<body>
+
+    <header>
+        <h1><b>TIME-TABLE</b></h1>
+    </header>  
+    
+    <div class="table_info">
+    <table align="center" border="2" cellspacing="10" cellpadding="10" >
+    <tr>
+        <th>DAY</th>
+        <th><p>1<br>9:00-9:50</p></th>
+        <th><p>2<br>9:50-10:40</p></th>
+        <th><p>3<br>10:40-11:30</p></th>
+        <th><p>4 <br>11:30-12:20</p></th>
+
+        <th><p>LUNCH BREAK <br>12:20-1:30</p></th>
+        <th> <p>5 <br>1:30-2:20</p></th>
+        <th> <p>6 <br>2:20-3:10</p></th>
+        <th> <p>7 <br>3:10-4:00</p></th>
+    </tr>
+
+    <tr>
+        <td>MONDAY</td>
+        <td>CA-303</td>
+        <td>CA-301</td>
+        <td>      </td>
+        <td>CA-308</td>
+        <td rowspan="6" align="center" height="50">  
+            <h2>
+            L
+            <br>
+            U
+            <br>
+            N
+            <br>
+            C
+            <br>
+            H
+            </h2>   </td>
+            <td>CA-311</td>
+            <TD>CA-311</TD>
+            <TD>CA-311</TD>
+    </tr>
+    <tr>
+        <td>TUESDAY</td>
+        <td>CA-308</td>
+        <td>CA-302</td>
+        <TD>CA-302</TD>
+        <TD>CA-304</TD>
+        <TD>CA-310</TD>
+        <TD>CA-310</TD>
+        <TD>CA-310</TD>
+    </tr>
+    <tr>
+        <td>WEDNESDAY</td>
+        <td>  </td>
+        <td>  </td>
+        <td>   </td>
+        <td>CA-302</td>
+        <TD>CA-304</TD>
+        <TD>CA-301</TD>
+        <TD>CA-303</TD>
+    <tr>
+        <td>THURSDAY</td>
+        <td>CA-308</td>
+        <td>PPP(Soft Skill)</td>
+        <td>CA-301</td>
+        <td>   </td>
+        <td>CA-302</td>
+        <TD>   </TD>
+        <TD>PPP(APTI)</TD>
+    </tr> 
+    </tr>
+    <tr>
+        <td>FRIDAY</td>
+        <td>CA-304 </td>
+        <TD>   </TD>
+        <td>CA-312</td>
+        <td>CA-312</td>
+        <td> </td>
+        <td>CA-303</td>
+        <TD>CA-303</TD>
+    </tr>
+    <tr>
+        <td>SATURDAY</td>
+        <TD> </TD>
+        <td>CA-304</td>
+        <td>CA--301</td>
+        <td>CA-308</td>
+        <td> </td>
+        <td> </td>
+        <td>  </td>
+    </tr>
+    </table>
+</div>
+
+
+<div class="top_button">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+    <script>
+    
+        let mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>
